@@ -1,10 +1,9 @@
 # Data-Engineering with E-Commerce Dataset
 
-## INSERT AN IMAGE FOR THE SERVICES USED OVER HERE
+![AWS_Diagram](https://user-images.githubusercontent.com/62859926/128254046-032b6569-dc96-48a9-97e7-40ae4073f4a3.jpg)
 
 # Introduction & Goals
 
-- In this project, I have applied Data Modeling with MySQL and build an ETL pipeline using Python. A startup wants to analyze the data they've been collecting on songs and user activity on their new music streaming app. Currently, they are collecting data in json format and the analytics team is particularly interested in understanding what songs users are listening to.
 - In this project, I have applied various data engineering principles from ingestion of data to visualise the data for business goals on an E-commerce dataset from Kaggle.
 - The tools I have used are AWS services: S3, Lambda function, MySQL RDS database, Glue with PySpark, Athena, Redshift, VPC, IAM, CloudWatch.
 - Apart from AWS services, other tools used were as follow: MySQL Workbench, DataGrip, Tableau.
