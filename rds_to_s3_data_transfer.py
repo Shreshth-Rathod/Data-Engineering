@@ -28,4 +28,4 @@ Transform0 = ApplyMapping.apply(frame = DataSource0, mappings = [("unitprice", "
 ## @return: DataSink0
 ## @inputs: [frame = Transform0]
 DataSink0 = glueContext.write_dynamic_frame.from_options(frame = Transform0, connection_type = "s3", format = "csv", connection_options = {"path": "s3://uk-ecommerce-data-output/Output/", "partitionKeys": []}, transformation_ctx = "DataSink0")
-job.commit()
+job.commit() 
