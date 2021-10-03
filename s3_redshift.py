@@ -23,7 +23,7 @@ DataSource0 = glueContext.create_dynamic_frame.from_catalog(database = "s3_datab
 # original Glue Dataframe to a Spark Dataframe, add the new column
 # then convert back again to a Glue Dataframe
 # 
-df=DataSource0.toDF().withColumn("invoicedate",to_timestamp(col("invoicedate"))).withColumn("year", date_format(col("invoicedate"), "Y")).withColumn("month", date_format(col("invoicedate"), "MMMMM")).withColumn("week_of_month", date_format(col("invoicedate"), "W")).withColumn("day", date_format(col("invoicedate"), "EEEE")).withColumn('quarter',quarter(col("invoicedate")))
+df=DataSource0.toDF().withColumn("invoicedate",to_timestamp(col("invoicedate"))).withColumn("year", date_format(col("invoicedate"), "Y")).withColumn("month", date_format(col("invoicedate"), "MMMMM")).withColumn("week_of_month", date_format(col("invoicedate"), "w")).withColumn("day", date_format(col("invoicedate"), "EEEE")).withColumn('quarter',quarter(col("invoicedate")))
 
 # withColumn("quarter", date_format(col("invoicedate"), "Q"))
 
