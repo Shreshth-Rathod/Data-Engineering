@@ -49,3 +49,4 @@ resolvechoice = ResolveChoice.apply(frame = Apply_Mapping, choice = "make_cols",
 DataSink0 = glueContext.write_dynamic_frame.from_catalog(frame = resolvechoice, database = "redshift_database", redshift_tmp_dir = args["TempDir"], table_name = "dw_ecommerce_public_uk_ecommerce", transformation_ctx = "DataSink0", additional_options = {"aws_iam_role":"arn:aws:iam::221276599729:role/S3_Glue_Redshift_Cluster_Authorisation"})
 
 job.commit()
+ 
