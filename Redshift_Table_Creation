@@ -16,3 +16,4 @@ CREATE TABLE dw_ecommerce.public.uk_ecommerce
   customerid INT,
   stockcode VARCHAR(10)
 );
+ 
