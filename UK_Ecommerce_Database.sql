@@ -14,3 +14,4 @@ CREATE TABLE Uk_Ecommerce_Data(
     Country VARCHAR(25),
 	CONSTRAINT pk_Uk_Ecommerce_Data PRIMARY KEY(Unique_id)
 );
+ 
